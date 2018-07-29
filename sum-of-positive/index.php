@@ -18,20 +18,15 @@
 		<figure>
 			<figcaption><b>My Solution</b></figcaption>
 				<pre>
-					<code>
-						<b>function</b> positive_sum(<u>$arr</u>) 
-						{
-							<u>$result</u> = 0;
-							<b>for</b> (<u>$i</u> = 0; <u>$i</u> < <b>count</b>(<u>$arr</u>); <u>$i++</u>)
-							{
-								<b>if</b> (<u>$arr</u>[<u>$i</u>] >= 0)
-								{
-									<u>$result</u> += <u>$arr</u>[<u>$i</u>];
-								}
-							}
-							<b>return</b> <u>$result</u>;
-						}
-					</code>
+<code>  <b>function</b> positive_sum(<u>$arr</u>) {</code>
+<code>    <u>$result</u> = 0;</code>
+<code>    <b>for</b> (<u>$i</u> = 0; <u>$i</u> < <b>count</b>(<u>$arr</u>); <u>$i++</u>) {</code>
+<code>      <b>if</b> (<u>$arr</u>[<u>$i</u>] >= 0) {</code>
+<code>        <u>$result</u> += <u>$arr</u>[<u>$i</u>];</code>
+<code>      }</code>
+<code>    }</code>
+<code>    <b>return</b> <u>$result</u>;</code>
+<code>  }</code>
 				</pre>
 		</figure>
 		<?php 
@@ -56,11 +51,9 @@
 		<figure>
 			<figcaption><b>Model Solution</b></figcaption>
 				<pre>
-					<code>
-						<b>function</b> positive_sum(<u>$a</u>) {
-							<b>return</b> <b>array_sum</b>(<b>array_filter</b>(<u>$a</u>, <b>function</b> (<u>$n</u>) {<b>return</b> <u>$n</u> > 0;}));
-						}
-					</code>
+<code>  <b>function</b> positive_sum(<u>$a</u>) {</code>
+<code>   <b>return</b> <b>array_sum</b>(<b>array_filter</b>(<u>$a</u>, <b>function</b> (<u>$n</u>) {<b>return</b> <u>$n</u> > 0;})); </code>
+<code>  } </code>
 				</pre>
   </body>
 </html>
